@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Apply saved theme before first paint to avoid a flash. Defaults to dark.
+      (function () {
+        try {
+          var t = localStorage.getItem('autocashier_theme');
+          if (t === 'light') document.documentElement.classList.remove('dark');
+          else document.documentElement.classList.add('dark');
+        } catch (e) { document.documentElement.classList.add('dark'); }
+      })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/logo-v3-transparent-B2OLUXTu.png" />
+    <meta name="theme-color" content="#161614" />
+    <meta name="description" content="AutoCashier Admin — dashboard multi-cabang untuk mengelola produk, inventori, transaksi, promo, dan pengguna." />
+    <title>AutoCashier Admin | Dashboard Multi-cabang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-DADaRV4y.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bcn3BN2E.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
